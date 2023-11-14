@@ -22,7 +22,26 @@
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
+    /* the root tragets the start of the file the same way when you try to link your html to the CSS */
+    /* within the written coding I was following the turtotial as I didnt know where to begin or what to do..*/
+    /* this set of styling is the starting point or when refreshed these are the conditions in place */
+:root {
+  --base: green;
+  spacing: 10px;
+  --blur: 10px;
 
+}
+/*  I am learning that you can use variables within CSS to manipulate styling */
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur)); 
+
+}
+
+.h1 {
+  color: var(--base);
+}
     /*
       misc styles, nothing to do with CSS variables
     */
